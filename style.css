@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(-45deg, #e8eff9, #f0f0f0);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+
+
+.feature-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+}
+
+
+/* ---------------- CAROUSEL ---------------- */
+.carousel-container {
+  width: 60%; /* Adjust this to your liking */
+  margin: 0 auto; /* Center it horizontally */
+}
+
+
+
+
+ /* ------------------ TABLE--------------- */
+
+.table-container {
+  width: 70%;            /* Take up full width of parent */
+  overflow-x: auto;       /* Enable horizontal scroll if needed */
+  margin: 20px auto;      /* Center the container with margin */
+}
+
+table {
+  width: 100%;            /* Table takes up 100% of its container */
+  border-collapse: collapse; /* Merge adjacent borders */
+  min-width: 300px;       /* Prevent the table from shrinking too much */
+}
+
+th, td {
+  border: 1px solid black; /* Borders for cells */
+  padding: 10px;            /* Padding inside cells */
+  text-align: center;       /* Center-align text */
+}
+
+th {
+  background-color: #f2f2f2; /* Light background for headers */
+}
+
+/* Media query: Adjust table styles for smaller screens */
+@media (max-width: 600px) {
+  th, td {
+    font-size: 14px;      /* Smaller font for smaller screens */
+    padding: 8px;         /* Reduce padding */
+  }
+}
+
+ /* ------------------ DOWNLOAD PDF --------------- */
+.pdf-link {
+  text-decoration: none;      /* Remove underline */
+  color: inherit;            /* Inherit color from the parent */
+  font-weight: bold;         /* Make text bold */
+  transition: color 0.3s;    /* Smooth transition for color change */
+}
+
+/* Change color on hover */
+.pdf-link:hover {
+  color: blue;               /* Change to blue when hovered */
+}
+
